@@ -2,16 +2,16 @@
 #include <stdlib.h>				//malloc(), free(), mem mngmt
 #include <stdio.h>				//file related IO, putchar(), gets
 #include <Windows.h>			//console
-#include <string.h>				//macros+functions für char arrays (Zeichenketten)
+//#include <string.h>				//macros+functions für char arrays (Zeichenketten)
 
 //https://www.sololearn.com/Course/C/
 
 int main()
 {
 	//Members, Variables, Structs deklarieren
-	SetConsoleTitle(L"");
+	SetConsoleTitleA("Enter Text and save to linked List");
 
-	char* inputStr[256] = {};		//char Buffer mit leerer menge initialisieren für "leeren", freigeräumten speicher
+	char inputStrBuffer[256] = {};		//char Buffer mit leerer menge initialisieren für freigeräumten speicher
 
 
 	//Start IO Operations 
@@ -21,18 +21,14 @@ int main()
 	printf("Please enter your Elements via Keyboard");
 	printf("\n");
 
-	//getchar(inputStr);
+	fgets(inputStrBuffer, sizeof(inputStrBuffer), stdin);		//fgets(buffer, größe, stream/input) seit c++11 raus -> fgets bessere lösung wgn compilersicherheit
+	
+	printf("\n");
+	printf("Your Input was: ");
+	printf(inputStrBuffer);
 
-	scanf("%C", &inputStr);
-
-	//strcat(inputStr, *inputStr);
 	printf("Input given, press ENTER to continue");
 	printf("\n");
 
-
-	for (int i = 0; i < sizeof(inputStr); ++i)					//char array wird nicht gelesen
-	{
-		printf(inputStr[i]);								//argument=inputstr, parameter=was frisst die foo
-	}
-
+	return 0;
 }
