@@ -8,6 +8,7 @@ int main()
 {
 	//Bufferdeklarationen
 	SetConsoleTitleA("Enter Text and save to linked List");
+	system("color 2");											//https://ss64.com/nt/
 
 	char inputStrBuffer[20] = {};		//char Buffer mit leerer menge initialisieren für freigeräumten speicher
 	char inputStrBuffer2[20] = {};		//nr 2 für element 2
@@ -56,18 +57,18 @@ int main()
 	element2.nextPtr = &element3;
 	element3.nextPtr = 0;												//ende der linked list
 
-	fgets(element.valueBuffer, sizeof(inputStrBuffer), stdin);		    //schreibe herein umgehe damit malloc?
-	fgets(element2.valueBuffer, sizeof(inputStrBuffer2), stdin);	
-	fgets(element3.valueBuffer, sizeof(inputStrBuffer3), stdin);
-	
+	//Doppelalloc
+	//fgets(element.valueBuffer, sizeof(inputStrBuffer), stdin);		    //schreibe herein umgehe damit malloc?
+	//fgets(element2.valueBuffer, sizeof(inputStrBuffer2), stdin);
+	//fgets(element3.valueBuffer, sizeof(inputStrBuffer3), stdin);
+
 	printf("\n");
 	printf("Input given, press ENTER to continue");
 	printf("\n");
 
 	system("Pause");													//getkeyboard
-	
+
 	printf("\n");
-	printf("You did it bra!");
 	printf("\n");
 
 	if (element.nextPtr && element2.nextPtr != 0)						//NULLprüfung
@@ -75,7 +76,7 @@ int main()
 		printf("Elements ready and linked !");
 		printf("\n");
 	}
-	else 
+	else
 	{
 		printf("Element creation of linked lists failed !");
 		printf("\n");
@@ -84,8 +85,17 @@ int main()
 	//user answer, print input
 	printf("Enter Y or y for printing values of linked list elements to console");
 	char consoleAnswerBufferY[4] = "Y y";
-	printf("Enter ´N´ or ´n´ for printing values of linked list elements to console");
+
+	if (scanf((consoleAnswerBufferY) = "Y y")) 
+	{
+
+	}
+	
+		
+	printf("\n");
+	printf("Enter N or n for printing values of linked list elements to console");
 	char consoleAnswerBufferN[4] = "N n";
+	printf("\n");
 
 	return 0;
 }
