@@ -3,6 +3,7 @@
 int main();
 
 void GetUserInput();
-
-void AddElementToLinkedList();
+void WriteValuesToLinkedList();
+void AddLinkedListElement();
+//void AddElementToLinkedList();
 void PrintLinkedList();
