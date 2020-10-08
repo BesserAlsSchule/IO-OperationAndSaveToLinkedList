@@ -1,2 +1,4 @@
 ﻿  IO-OperationAndSaveToLinkedList.cpp
+D:\Projects\repos\IO-OperationAndSaveToLinkedList\IO-OperationAndSaveToLinkedList\IO-OperationAndSaveToLinkedList\IO-OperationAndSaveToLinkedList.h(5,27): warning C4091: "typedef ": Ignoriert auf der linken Seite von "nodeElement", wenn keine Variable deklariert wurde
+D:\Projects\repos\IO-OperationAndSaveToLinkedList\IO-OperationAndSaveToLinkedList\IO-OperationAndSaveToLinkedList\IO-OperationAndSaveToLinkedList.cpp(20,2): warning C4091: "typedef ": Ignoriert auf der linken Seite von "nodeElement", wenn keine Variable deklariert wurde
   IO-OperationAndSaveToLinkedList.vcxproj -> D:\Projects\repos\IO-OperationAndSaveToLinkedList\IO-OperationAndSaveToLinkedList\x64\Debug\IO-OperationAndSaveToLinkedList.exe

@@ -2,8 +2,12 @@
 
 int main();
 
+typedef struct nodeElement;
+
 void GetUserInput();
-void WriteValuesToLinkedList();
+
 void AddLinkedListElement();
-//void AddElementToLinkedList();
+nodeElement* getNewNode();
 void PrintLinkedList();
+
+void DeleteLinkedList();
