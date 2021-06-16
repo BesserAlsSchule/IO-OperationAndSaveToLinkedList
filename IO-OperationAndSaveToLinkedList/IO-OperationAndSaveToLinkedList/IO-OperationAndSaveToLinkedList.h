@@ -1,8 +1,10 @@
-#pragma once
-
 int main();
 
-void GetUserInput();
+typedef struct nodeElement;				
 
-void AddElementToLinkedList();
-void PrintLinkedList();
+	void AddElementAndValue();
+	void PrintLinkedList();
+	void AddSingleNodeToStart();
+	void AddSingleNodeToEnd();
+	void InsertAtSpecifiedPosition();		
+	void DeleteLinkedList();

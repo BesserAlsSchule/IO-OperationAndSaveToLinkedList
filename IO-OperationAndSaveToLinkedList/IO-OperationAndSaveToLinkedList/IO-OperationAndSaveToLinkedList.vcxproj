@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BeispielCOdeNodes.cpp" />
     <ClCompile Include="IO-OperationAndSaveToLinkedList.cpp" />
     <ClCompile Include="Quelle.c" />
   </ItemGroup>

@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Quelle.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
     <ClCompile Include="IO-OperationAndSaveToLinkedList.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Quelle.c">
+    <ClCompile Include="BeispielCOdeNodes.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
